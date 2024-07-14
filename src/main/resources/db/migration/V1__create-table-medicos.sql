@@ -1,0 +1,13 @@
+CREATE TABLE medicos (
+    id BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY,
+    calle VARCHAR(255) NOT NULL,
+    ciudad VARCHAR(255) NOT NULL,
+    complemento VARCHAR(255),
+    distrito VARCHAR(255) NOT NULL,
+    numero VARCHAR(255) NOT NULL,
+    documento VARCHAR(255) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    especialidad VARCHAR(255) NOT NULL,
+    nombre VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+);
