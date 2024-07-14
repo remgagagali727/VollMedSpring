@@ -22,9 +22,9 @@ public class ConsultaController {
     private AgendaDeConsultaService service;
 
     @PostMapping
-    public ResponseEntity<ConsultaDetallesDatos> agendar(@RequestBody @Valid ConsultaGenerarDatos datos) {
+    public ConsultaDetallesDatos agendar(@RequestBody @Valid ConsultaGenerarDatos datos) {
         Consulta consulta = service.agendar(datos);
-        return ResponseEntity.ok(new ConsultaDetallesDatos(consulta));
+        return new ConsultaDetallesDatos(consulta);
     }
 
 }
