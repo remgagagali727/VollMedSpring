@@ -1,6 +1,7 @@
 package com.remproyects.voll.api.controller;
 
 import com.remproyects.voll.api.domain.paciente.*;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.net.URI;
 
 @RestController
+@SecurityRequirement(name = "bearer-key")
 @RequestMapping("/pacientes")
 public class PacienteController {
 

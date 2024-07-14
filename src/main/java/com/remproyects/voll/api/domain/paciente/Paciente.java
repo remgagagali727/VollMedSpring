@@ -46,4 +46,17 @@ public class Paciente {
     public void desactivarPaciente() {
         this.activo = false;
     }
+
+    @Override
+    public String toString() {
+        return "Paciente{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", email='" + email + '\'' +
+                ", documentoIdentidad='" + documentoIdentidad + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", activo=" + activo +
+                ", direccion=" + direccion +
+                '}';
+    }
 }

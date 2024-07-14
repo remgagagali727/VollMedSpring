@@ -59,4 +59,18 @@ public class Medico {
     public void desactivarMedico() {
         this.activo = false;
     }
+
+    @Override
+    public String toString() {
+        return "Medico{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", email='" + email + '\'' +
+                ", documento='" + documento + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", activo=" + activo +
+                ", especialidad=" + especialidad +
+                ", direccion=" + direccion +
+                '}';
+    }
 }

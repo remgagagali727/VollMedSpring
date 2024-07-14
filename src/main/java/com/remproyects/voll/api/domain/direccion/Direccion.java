@@ -33,4 +33,15 @@ public class Direccion {
         this.complemento = direccion.complemento();
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "Direccion{" +
+                "calle='" + calle + '\'' +
+                ", distrito='" + distrito + '\'' +
+                ", ciudad='" + ciudad + '\'' +
+                ", numero='" + numero + '\'' +
+                ", complemento='" + complemento + '\'' +
+                '}';
+    }
 }
